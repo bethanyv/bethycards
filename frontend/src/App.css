@@ -1,0 +1,109 @@
+@import '~antd/dist/antd.css';
+
+html,
+body {
+  background-color: #ebf3ea !important;
+}
+
+.headband {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.headband-none {
+  flex: 1 1;
+}
+
+.headband-logo {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+
+.headband-checkout {
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5rem;
+}
+
+.card-grid {
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.space-btm-md {
+  margin-bottom: 3rem;
+}
+
+.space-btm-md-padding {
+  padding-bottom: 3rem;
+}
+
+.menu {
+  background-color: #f7f7f7;
+  justify-content: center;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected {
+  color: #7ba176;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected::after {
+  border-color: #7ba176;
+}
+
+.ant-layout-header {
+  padding: 0;
+}
+
+.content-block {
+  background-color: #ebf3ea !important;
+  padding-top: 13rem;
+  min-height: 92vh;
+}
+
+.headband-logo img {
+  max-height: 5rem;
+}
+
+.footer-block {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.header-content {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  color: #7ba176;
+  border-color: #7ba176;
+}
+
+@media (max-width: 850px) {
+  .card-grid {
+    width: 100%;
+  }
+}
