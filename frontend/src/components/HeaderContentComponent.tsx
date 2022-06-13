@@ -1,24 +1,27 @@
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { Button } from "antd";
-import MenuComponent from "./MenuComponent";
+import { Link } from "react-router-dom";
 
 const HeaderContentComponent = () => {
     return (
-        <div className="header space-btm-md">
+        <div className="header">
             <div className="headband">
                 <div className="headband-none"></div>
                 <div className="headband-logo">
-                    <img src="./img/bethycardslogo.png" alt="logo" />
+                    <Link to="/" >
+                        <img src="./img/bethycardslogo.png" alt="logo" />
+                    </ Link>
                 </div>
                 <div className="headband-checkout">
-                    <Button
-                        shape="round"
-                        icon={<ShoppingCartOutlined />}
-                    >
-                    </Button>
+                    <Link to="/checkout" >
+                        <Button
+                            shape="round"
+                            icon={<ShoppingCartOutlined />}
+                        >
+                        </Button>
+                    </ Link>
                 </div>
             </div>
-            <MenuComponent />
         </div>
     );
 }

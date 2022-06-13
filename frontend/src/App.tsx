@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import CardComponent from './components/CardComponent';
 import HeaderContentComponent from './components/HeaderContentComponent';
+import MenuComponent from './components/MenuComponent';
 
 const App = () => {
   const { Header, Content, Footer } = Layout;
@@ -10,8 +11,9 @@ const App = () => {
   return (
     <div className="app">
       <Layout>
-        <Header className="header-content">
+        <Header className="header-content space-btm-md">
           <HeaderContentComponent />
+          <MenuComponent />
         </Header>
 
         <Content className="content-block space-btm-md-padding">
