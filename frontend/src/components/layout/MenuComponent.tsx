@@ -1,6 +1,6 @@
 import { Menu } from 'antd';
 
-const MenuComponent = () => {
+export const MenuComponent = () => {
     const items = [
         { label: 'All', key: 'item-1' }, // remember to pass the key prop
         { label: 'Birthday', key: 'item-2' }, // which is required
@@ -15,5 +15,3 @@ const MenuComponent = () => {
         />
     );
 }
-
-export default MenuComponent;

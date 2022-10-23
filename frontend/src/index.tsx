@@ -4,19 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import CheckoutComponent from './components/CheckoutComponent';
+import { CheckoutComponent } from './components/pages/CheckoutPage/CheckoutPageComponent';
+import { CardPageComponent } from './components/pages/CardPage/CardPageComponent';
+import LayoutComponent from './components/LayoutComponent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="checkout" element={<CheckoutComponent />} />
-        <Route path="item/:id" element={<CheckoutComponent />} />
-      </Routes>
+      <div className="app">
+        <LayoutComponent>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="checkout" element={<CheckoutComponent />} />
+            <Route path="item/:id" element={<CardPageComponent />} />
+          </Routes>
+        </LayoutComponent>
+      </div>
     </BrowserRouter>
   </React.StrictMode>
 );
