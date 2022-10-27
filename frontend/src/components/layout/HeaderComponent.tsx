@@ -12,7 +12,7 @@ export const HeaderComponent = () => {
                     <div className="headband-none"></div>
                     <div className="headband-logo">
                         <Link to="/" >
-                            <img src="./img/bethycardslogo.png" alt="logo" />
+                            <img src="/img/bethycardslogo.png" alt="logo" />
                         </ Link>
                     </div>
                     <div className="headband-checkout">

@@ -1,7 +1,7 @@
 import { Layout } from 'antd';
 import React from 'react';
-import { FooterComponent } from './layout/FooterComponent';
-import { HeaderComponent } from './layout/HeaderComponent';
+import { FooterComponent } from './FooterComponent';
+import { HeaderComponent } from './HeaderComponent';
 
 interface LayoutProps {
     children: React.ReactNode;

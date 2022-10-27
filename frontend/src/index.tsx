@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CheckoutComponent } from './components/pages/CheckoutPage/CheckoutPageComponent';
 import { CardPageComponent } from './components/pages/CardPage/CardPageComponent';
-import LayoutComponent from './components/LayoutComponent';
+import LayoutComponent from './components/layout/LayoutComponent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

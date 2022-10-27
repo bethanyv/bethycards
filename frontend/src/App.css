@@ -40,6 +40,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.space-btm-sm {
+  margin-bottom: 1rem;
+}
+
 .space-btm-md-padding {
   padding-bottom: 3rem;
 }
@@ -100,6 +104,26 @@ body {
 .ant-btn:focus {
   color: #7ba176;
   border-color: #7ba176;
+}
+
+.card-page {
+  justify-content: center;
+  display: flex;
+}
+
+.single-card-page__image {
+  margin-right: 1.5rem;
+}
+
+.single-card-page__title {
+  font-size: 1.5rem;
+}
+
+.single-card-page__description {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 850px) {
